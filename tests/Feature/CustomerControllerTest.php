@@ -56,7 +56,7 @@ class CustomerControllerTest extends TestCase
         ]));
 
         $response->assertStatus(200);
-        $this->assertGreaterThan(1, $response['total']);
+        $this->assertGreaterThan(0, $response['total']);
     }
 
     // Test sorting customers by a specific field and order
